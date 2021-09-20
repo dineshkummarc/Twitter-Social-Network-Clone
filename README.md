@@ -36,8 +36,8 @@ Create a Twitter Social Network Clone From Scratch PHP,MySQL
 
 ### Steps to set up
 
-1 Install Xampp in your local computer<br>
+1 Install Xampp(7.3.30) specific this version other wise you will get error in your local computer<br>
 2 create a database with the name twitter<br>
-3 import Sql from the code to your database<br>
+3 import Sql from sql folder the code to your database<br>
 4 Enjoy😁
 
