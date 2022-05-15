@@ -230,4 +230,6 @@ class User
 		$stmt->bindParam(':time', date('Y-m-d H:i:s'), PDO::PARAM_STR);
 		$stmt->execute();
 	}
+
+	
 }

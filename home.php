@@ -28,240 +28,214 @@ if (isset($_POST['tweet'])) {
     }
 }
 ?>
-<!DOCTYPE HTML>
-<html>
-
-<head>
-    <title>Tweety</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" />
-    <link rel="stylesheet" href="assets/css/style-complete.css" />
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-</head>
-<!--Helvetica Neue-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="layout__left--sidebar-container">
+        <div class="layout__left--sidebar">
+          <div class="brand__box">
+            <img src="images/svg/twitter.svg" alt="twitter" class="brand" />
+          </div>
+          <div class="left__sidebar--box">
+            <ul class="left__sidebar--menu">
+              <li class="left__sidebar--menu-items">
+                <a href="#" class="left__sidebar--menu-links left__sidebar--menu-links--active"
+                  ><div class="left__sidebar--menu-image--box"
+                    ><img
+                      src="images/svg/home.svg"
+                      alt="twitter"
+                      class="left__sidebar--menu-image" /></
+                  >Home</div></a
+                >
+              </li>
+              <li class="left__sidebar--menu-items">
+                <a href="#" class="left__sidebar--menu-links"
+                  ><div class="left__sidebar--menu-image--box"
+                    ><img
+                      src="images/svg/explore.svg"
+                      alt="twitter"
+                      class="left__sidebar--menu-image" /></
+                  >Explore</div></a
+                >
+              </li>
+              <li class="left__sidebar--menu-items">
+                <a href="#" class="left__sidebar--menu-links"
+                  ><div class="left__sidebar--menu-image--box"
+                    ><img
+                      src="images/svg/notifications.svg"
+                      alt="twitter"
+                      class="left__sidebar--menu-image" /></
+                  >Notification</div></a
+                >
+              </li>
+              <li class="left__sidebar--menu-items">
+                <a href="#" class="left__sidebar--menu-links"
+                  ><div class="left__sidebar--menu-image--box"><img
+                    src="images/svg/messages.svg"
+                    alt="twitter"
+                    class="left__sidebar--menu-image" />Messages</div></a
+                >
+              </li>
+              <li class="left__sidebar--menu-items">
+                <a href="#" class="left__sidebar--menu-links"
+                  ><div class="left__sidebar--menu-image--box"><img
+                    src="images/svg/bookmark.svg"
+                    alt="twitter"
+                    class="left__sidebar--menu-image" />Bookmarks</div></a
+                >
+              </li>
+              <li class="left__sidebar--menu-items">
+                <a href="#" class="left__sidebar--menu-links"
+                  ><div class="left__sidebar--menu-image--box"><img
+                    src="images/svg/list.svg"
+                    alt="twitter"
+                    class="left__sidebar--menu-image" />Lists</div></a
+                >
+              </li>
+              <li class="left__sidebar--menu-items">
+                <a href="profile.html" class="left__sidebar--menu-links"
+                  ><div class="left__sidebar--menu-image--box"><img
+                    src="images/svg/profile.svg"
+                    alt="twitter"
+                    class="left__sidebar--menu-image" />Profile</div></a
+                >
+              </li>
+              <li class="left__sidebar--menu-items">
+                <a href="#" class="left__sidebar--menu-links"
+                  ><div class="left__sidebar--menu-image--box"><img
+                    src="images/svg/more.svg"
+                    alt="twitter"
+                    class="left__sidebar--menu-image" />More</div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- ! User Logout Menu -->
+        </div>
+        <div class="left__sidebar--logout">
+            <img src="images/default__peofile.png" alt="profile__image" class="tweet__user-logo">
+            <div class="left__sidebar--userText">
+              <h4>Gaurav Sharma</h4>
+              <h5>@gsharma010</h5>
+            </div>
+            <div class="logout__menu"><img src="images/svg/menu.svg" alt="more"></div>
+          </div>
+      </div>
+      <!-- ! Center -->
+      <div class="layout__main--sidebar">
+        <div>
+          <div class="explorar">
+            <h2>Home</h3>
+            <div class="Exploara"><img src="images/svg/more.svg" alt="explore"></div>
+          </div>
+        </div>
+      <!-- ! Devider  -->
+        <div class="tweet__container">
+          <img src="images/default__peofile.png" alt="profile__image" class="tweet__user-logo">
+          <div class="tweet__creater">
+            <div>
+              <textarea name="tweet" placeholder="What's Happning ?" id="tweetArea" cols="55" rows="3"></textarea>
+            </div>
+            <!-- ? Tweet Actions -->
+            <div class="tweet__options">
+              <div class="tweet__options--items"><img src="images/svg/media.svg" alt="media"></div>
+              <div class="tweet__options--items"><img src="images/svg/gif.svg" alt="media"></div>
+              <div class="tweet__options--items"><img src="images/svg/graph.svg" alt="media"></div>
+              <div class="tweet__options--items"><img src="images/svg/smile.svg" alt="media"></div>
+              <div class="tweet__options--items"><img src="images/svg/date.svg" alt="media"></div>
+              <div class="tweet__options--items"><button class="btn btn__basic">Tweet</button></div>
+            </div>
+          </div>
+        </div>
+        <!-- ? Tweets -->
+        <div class="tweet">
+          <img src="images/default__peofile.png" alt="profile__image" class="tweet__user-logo">
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__person--name">Gaurav Sharma</div>
+              <div class="tweet__username"><a href="#">(@gsharma010)</a></div>
+              <div class="tweet__publish--time">10h</div>
+              <div class="tweet__menu"><img src="images/svg/menu.svg" alt="menu"></div>
+            </div>
+            <div class="tweet__content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis eos itaque quidem dolor quam tempora. Voluptatem aliquam consequatur quibusdam, rem, laboriosam quia eum veritatis ullam harum commodi illum! Non!
+            </div>
+            <div class="tweet__actions">
+              <div class="comment">
+                <a href="#"><img class="action__icon" src="images/svg/comment.svg" alt="comment"></a>
+              </div>
+              <div class="retweet">
+                <a href="#"><img class="action__icon" src="images/svg/retweet.svg" alt="retweet"></a> 
+              </div>
+              <div class="like">
+                <a href="#"><img class="action__icon" src="images/svg/like.svg" alt="like"></a> 
+              </div>
+              <div class="share">
+                <a href="#"><img class="action__icon" src="images/svg/share.svg" alt="share"></a> 
+              </div>
+            </div>
+          </div>
+        </div>       
+      </div>
+      <!-- ! RIGHT -->
+      <div class="layout__right--sidebar-container">
+        <div class="layout__right--sidebar">
+          <div class="search__box">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search on Twitter"
+            />
+          </div>
 
-<body>
-    <div class="wrapper">
-        <!-- header wrapper -->
-        <div class="header-wrapper">
+          <!-- ? Who to follow -->
+          <div class="follow__suggestion">
+            <h3 class="follow__suggestion--heading">Who to follow</h3>
+            <div class="follow__suggestion--data">
+              <img src="images/default__peofile.png" alt="profile__image" class="tweet__user-logo">
+              <div class="follow__you--data">
+                <h4>Gaurav Sharma</h4>
+                <h6>@gsharma010</h6>
+              </div>
+              <button>Follow</button>
+            </div>
 
-            <div class="nav-container">
-                <!-- Nav -->
-                <div class="nav">
+            <div class="follow__suggestion--data">
+              <img src="images/default__peofile.png" alt="profile__image" class="tweet__user-logo">
+              <div class="follow__you--data">
+                <h4>Gaurav Sharma</h4>
+                <h6>@gsharma010</h6>
+              </div>
+              <button>Follow</button>
+            </div>
 
-                    <div class="nav-left">
-                        <ul>
-                            <li><a href="home.php"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                            <li><a href="i/notifications"><i class="fa fa-bell" aria-hidden="true"></i>Notification<span id="notification">
-                                        <?php
-                                        if ($notify->totalN > 0) {
-                                            echo '<span class="span-i">' . $notify->totalN . '</span>';
-                                        }
-                                        ?>
-                                    </span></a>
-                            </li>
-                            <li id="messagePopup"><i class="fa fa-envelope" aria-hidden="true"></i>Messages<span id="messages">
-                                    <?php
-                                    if ($notify->totalM > 0) {
-                                        echo '<span class="span-i">' . $notify->totalM . '</span>';
-                                    }
-                                    ?>
-                                </span></li>
-                        </ul>
-                    </div><!-- nav left ends-->
+            <div class="follow__suggestion--data">
+              <img src="images/default__peofile.png" alt="profile__image" class="tweet__user-logo">
+              <div class="follow__you--data">
+                <h4>Gaurav Sharma</h4>
+                <h6>@gsharma010</h6>
+              </div>
+              <button>Follow</button>
+            </div>
+            <a href="#" class="follow__suggestion--more">Show More</a>
+          </div>
 
-                    <div class="nav-right">
-                        <ul>
-                            <li>
-                                <input type="text" placeholder="Search" class="search" />
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                                <div class="search-result">
-                                </div>
-                            </li>
-
-                            <li class="hover"><label class="drop-label" for="drop-wrap1"><img src="<?php echo BASE_URL . $user->profileImage; ?>" /></label>
-                                <input type="checkbox" id="drop-wrap1">
-                                <div class="drop-wrap">
-                                    <div class="drop-inner">
-                                        <ul>
-                                            <li><a href="<?php echo $user->username; ?>"><?php echo $user->username; ?></a>
-                                            </li>
-                                            <li><a href="settings/account">Settings</a></li>
-                                            <li><a href="includes/logout.php">Log out</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><label class="addTweetBtn">Tweet</label></li>
-                        </ul>
-                    </div><!-- nav right ends-->
-
-                </div><!-- nav ends -->
-
-            </div><!-- nav container ends -->
-
-        </div><!-- header wrapper end -->
-        <!---Inner wrapper-->
-        <div class="inner-wrapper">
-            <div class="in-wrapper">
-                <div class="in-full-wrap">
-                    <div class="in-left">
-                        <div class="in-left-wrap">
-                            <div class="info-box">
-                                <div class="info-inner">
-                                    <div class="info-in-head">
-                                        <!-- PROFILE-COVER-IMAGE -->
-                                        <img src="<?php echo $user->profileCover; ?>" />
-                                    </div><!-- info in head end -->
-                                    <div class="info-in-body">
-                                        <div class="in-b-box">
-                                            <div class="in-b-img">
-                                                <!-- PROFILE-IMAGE -->
-                                                <img src="<?php echo $user->profileImage; ?>" />
-                                            </div>
-                                        </div><!--  in b box end-->
-                                        <div class="info-body-name">
-                                            <div class="in-b-name">
-                                                <div><a href="<?php echo $user->username; ?>"><?php echo $user->screenName; ?></a>
-                                                </div>
-                                                <span><small><a href="<?php echo $user->username; ?>"><?php echo $user->username; ?></a></small></span>
-                                            </div><!-- in b name end-->
-                                        </div><!-- info body name end-->
-                                    </div><!-- info in body end-->
-                                    <div class="info-in-footer">
-                                        <div class="number-wrapper">
-                                            <div class="num-box">
-                                                <div class="num-head">
-                                                    TWEETS
-                                                </div>
-                                                <div class="num-body">
-                                                    <?php $getFromT->countTweets($user_id); ?>
-                                                </div>
-                                            </div>
-                                            <div class="num-box">
-                                                <div class="num-head">
-                                                    FOLLOWING
-                                                </div>
-                                                <div class="num-body">
-                                                    <span class="count-following"><?php echo $user->following; ?></span>
-                                                </div>
-                                            </div>
-                                            <div class="num-box">
-                                                <div class="num-head">
-                                                    FOLLOWERS
-                                                </div>
-                                                <div class="num-body">
-                                                    <span class="count-followers"><?php echo $user->followers; ?></span>
-                                                </div>
-                                            </div>
-                                        </div><!-- mumber wrapper-->
-                                    </div><!-- info in footer -->
-                                </div><!-- info inner end -->
-                            </div><!-- info box end-->
-
-                            <!--==TRENDS==-->
-                            <?php $getFromT->trends(); ?>
-                            <!--==TRENDS==-->
-
-                        </div><!-- in left wrap-->
-                    </div><!-- in left end-->
-                    <div class="in-center">
-                        <div class="in-center-wrap">
-                            <!--TWEET WRAPPER-->
-                            <div class="tweet-wrap">
-                                <div class="tweet-inner">
-                                    <div class="tweet-h-left">
-                                        <div class="tweet-h-img">
-                                            <!-- PROFILE-IMAGE -->
-                                            <img src="<?php echo $user->profileImage; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="tweet-body">
-                                        <form method="post" action="home.php" enctype="multipart/form-data">
-                                            <textarea class="status" name="status" placeholder="Wan't to say something" rows="4" cols="50"></textarea>
-                                            <div class="hash-box">
-                                                <ul>
-                                                </ul>
-                                            </div>
-                                    </div>
-                                    <div class="tweet-footer">
-                                        <div class="t-fo-left">
-                                            <ul>
-                                                <input type="file" name="file" id="file" />
-                                                <li><label for="file"><i class="fa fa-camera" aria-hidden="true"></i></label>
-                                                    <span class="tweet-error">
-                                                        <?php
-                                                        if (isset($error)) {
-                                                            echo $error;
-                                                        } else if (isset($imageError)) {
-                                                            echo $imageError;
-                                                        }
-                                                        ?>
-                                                    </span>
-                                                    <span class="tweet-error"></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="t-fo-right">
-                                            <span id="count">140</span>
-                                            <input type="submit" name="tweet" value="tweet" />
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--TWEET WRAP END--><br>
-                            <div class="tweets">
-                                <?php
-                                $getFromT->tweets($user_id, 3);
-                                ?>
-                            </div>
-
-                            <!--Tweet SHOW WRAPPER-->
-                            <div class="tweets">
-                                <!--TWEETS HERE-->
-                            </div>
-                            <!--TWEETS SHOW WRAPPER-->
-
-                            <div class="loading-div">
-                                <img id="loader" src="assets/images/loading.svg" style="display: none;" />
-                            </div>
-                            <div class="popupTweet">
-
-                            </div>
-                            <!--Tweet END WRAPER-->
-                            <script type="text/javascript" src="assets/js/messages.js"></script>
-                            <script type="text/javascript" src="assets/js/like.js"></script>
-                            <script type="text/javascript" src="assets/js/retweet.js"></script>
-                            <script type="text/javascript" src="assets/js/popuptweets.js"></script>
-                            <script type="text/javascript" src="assets/js/comment.js"></script>
-                            <script type="text/javascript" src="assets/js/delete.js"></script>
-                            <script type="text/javascript" src="assets/js/popupForm.js"></script>
-                            <script type="text/javascript" src="assets/js/fetch.js"></script>
-                            <script type="text/javascript" src="assets/js/postMessage.js"></script>
-                            <script type="text/javascript" src="assets/js/notification.js"></script>
-                            <script type="text/javascript" src="assets/js/search.js"></script>
-                            <script type="text/javascript" src="assets/js/hashtags.js"></script>
-                            <script type="text/javascript" src="assets/js/follow.js"></script>
-                        </div><!-- in left wrap-->
-                    </div><!-- in center end -->
-
-                    <div class="in-right">
-                        <div class="in-right-wrap">
-
-                            <!--Who To Follow-->
-                            <?php $getFromF->whoToFollow($user_id, $user->user_id); ?>
-                            <!--Who To Follow-->
-
-                        </div><!-- in left wrap-->
-
-                    </div><!-- in right end -->
-                </div>
-                <!--in full wrap end-->
-
-            </div><!-- in wrappper ends-->
-        </div><!-- inner wrapper ends-->
-    </div><!-- ends wrapper -->
-</body>
-
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
